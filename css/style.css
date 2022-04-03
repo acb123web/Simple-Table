@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@300;400;500;600;700;800&display=swap');
+*,
+*::before,
+*::after{
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+}
+body{
+    font-family: Mukta, sans-serif;
+    height:100vh;
+    display:grid;
+    justify-content: center;
+    align-items:center;
+    color:#4f546c;
+    font-size:0.9rem;
+    font-weight:bold;
+    background-color: #f9fbff;
+}
+table{
+    border-collapse: collapse;
+    box-shadow:0 5px 10px #e1e5ee;
+    background-color: #fff;
+    text-align: left;
+    overflow:hidden;
+}
+thead{
+    box-shadow:0 5px 10px #e1e5ee;
+}
+th{
+    padding:1rem 2rem;
+    text-transform:uppercase;
+    letter-spacing: 0.1rem;
+    text-align: center;
+    font-weight:bold;
+}
+td{
+    padding:1rem 2rem;
+}
+a{
+    text-decoration: none;
+    color:#2962ff;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+.status{
+    border-radius:0.2rem;
+    padding:0.2rem 1rem;
+    text-align: center;
+    font-weight:bold;
+    box-shadow:rgba(50,50,93,0.25) 0px 6px 12px -2px,
+               rgba(0,0,0,0.3) 0px 3px 7px -3px;
+}
+.status1{
+    border-radius:0.2rem;
+    padding:0.5rem 0.5rem;
+    text-align: center;
+    cursor:pointer;
+    box-shadow:rgba(50,50,93,0.25) 0px 6px 12px -2px,
+               rgba(0,0,0,0.3) 0px 3px 7px -3px;
+}
+.status-pending{
+    background-color: #4285f4;
+    color:#fff;
+}
+.status-paid{
+    background-color: #00c851;
+    color:#fff;
+}
+.status-unpaid{
+    background-color: #ffac44;
+    color:#fff;
+}
+.status-edit{
+    background-color: #cdd2ff;
+    color:#282bc6;
+}
+.status-delete{
+    background-color: #cdd2ff;
+    color:#ff1111;
+}
+.amount{
+    text-align: right;
+}
+tr:nth-child(even){
+    background-color: #f4f6fb;
+}
